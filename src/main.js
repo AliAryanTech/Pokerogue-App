@@ -3,6 +3,7 @@ const {
   app,
   BrowserWindow
 } = require('electron');
+app.commandLine.appendSwitch('disable-features', 'EnableWindowsGamingInputDataFetcher');
 const path = require('path');
 const fs = require('fs');
 
